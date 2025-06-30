@@ -89,7 +89,8 @@ export default class extends Extension {
             search_string += &q=${kw}
         }
         const res = await this.request(search_string)
-        const bsxList = res.match(/<tr class="default"[\s\S]+?<\/tr>|<tr class="success"[\s\S]+?<\/tr>/g)
+        const bsxList = res.match(/<tr class="default"[\s\S]+?<\/tr>|<tr class="success"[\s\S]+?<\/tr>/g) || []
+
         // console.log(bsxList[0])
         const bangumi = bsxList.map((element) => {
             // console.log(element.match(/data-timestamp.+?>(.+?)<\/td>[^;]+?(\d+)<\/td>[\s\S]+?>(\d+)/))
