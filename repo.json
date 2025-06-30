@@ -1,0 +1,11 @@
+{
+  "name": "My Miru Plugin Repo",
+  "plugins": [
+    {
+      "name": "Nyaa",
+      "description": "Trying it out",
+      "version": "1.0.0",
+      "url": "https://raw.githubusercontent.com/Chanayel/miru-plugins/main/nyaa/index.js"
+    }
+  ]
+}
